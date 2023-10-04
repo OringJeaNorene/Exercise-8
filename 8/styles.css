@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-family: 'monospace';
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 20px;
+    position: relative;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 150%;
+    height: 5px;
+    background-color: plum;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
